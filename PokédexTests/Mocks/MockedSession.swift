@@ -1,5 +1,5 @@
 import Foundation
-@testable import Stargazers
+@testable import Pokedex
 
 struct MockedSession: MURLSessionProtocol {
     let data: Data?

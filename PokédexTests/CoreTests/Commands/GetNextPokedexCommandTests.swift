@@ -1,26 +1,21 @@
 import XCTest
-@testable import Stargazers
+@testable import Pokedex
 
 extension MURLCommandTests {
-    func testGetStargazersRequest() {
-        guard let data = JSONMock.loadJson(fromResource: "valid_stargazer") else {
-            XCTFail("JSON data error!")
-            return
-        }
-
-        let session = MockedSession(data: data, response: nil, error: nil) {
-            XCTAssertEqual($0.url?.absoluteString, "https://api.github.com/repos/user1/myrepo/stargazers?per_page=20&page=1")
+    func testGetNextPokedexRequest() {
+        let session = MockedSession(data: Data(), response: nil, error: nil) {
+            XCTAssertEqual($0.url?.absoluteString, "https://pokeapi.co/api/v2/pokemon?offset=40&limit=40")
             XCTAssertEqual($0.httpMethod, "GET")
         }
 
         do {
             try MServicePerformer(configuration: configure(session))
-                .stargazers(for: MUser(name: "user1", repo: "myrepo"), page: 1) { _ in }
+                .pokedex(next: "https://pokeapi.co/api/v2/pokemon?offset=40&limit=40") { _ in }
         } catch { XCTFail("Unexpected error \(error)!") }
     }
 
-    func testGetStargazersResponseShouldSuccess() {
-        guard let data = JSONMock.loadJson(fromResource: "valid_stargazer") else {
+    func testGetNextPokedexResponseShouldSuccess() {
+        guard let data = JSONMock.loadJson(fromResource: "valid_get_pokedex") else {
             XCTFail("JSON data error!")
             return
         }
@@ -28,12 +23,12 @@ extension MURLCommandTests {
 
         do {
             try MServicePerformer(configuration: configure(session))
-                .stargazers(for: MUser(name: "", repo: ""), page: 0) { result in
+                .pokedex(next: "https://poke.next.com") { result in
                     switch result {
                     case .success(let response):
-                        XCTAssertEqual(response.count, 8)
-                        XCTAssertEqual(response.first?.user, "dcampogiani")
-                        XCTAssertEqual(response.first?.avatar, "https://avatars.githubusercontent.com/u/1054526?v=4")
+                        XCTAssertEqual(response.results.count, 20)
+                        XCTAssertEqual(response.results.first?.name, "bulbasaur")
+                        XCTAssertEqual(response.results.first?.url, "https://pokeapi.co/api/v2/pokemon/1/")
                     case .failure(let error):
                         XCTFail("Should be success! Got: \(error)")
                     }
@@ -41,12 +36,12 @@ extension MURLCommandTests {
         } catch { XCTFail("Unexpected error \(error)!") }
     }
 
-    func testGetStargazersResponse_withBadData_shouldFail() {
+    func testGetNextPokedexResponse_withBadData_shouldFail() {
         let session = MockedSession.simulate(failure: MServiceError.noData) { _ in }
 
         do {
             try MServicePerformer(configuration: configure(session))
-                .stargazers(for: MUser(name: "", repo: ""), page: 0) { result in
+                .pokedex(next: "https://poke.next.com") { result in
                     switch result {
                     case .success:
                         XCTFail("Should be fail! Got success.")

@@ -3,10 +3,10 @@ import Foundation
 extension Result where Success == MError {
     func mapError<T: Decodable>(code: Int) -> (Result<T, Error>) {
         switch self {
-        case .success(let model):
+        case .success(_):
             return .failure(NSError(domain: "",
                                     code: code,
-                                    userInfo: [NSLocalizedDescriptionKey: model.message]))
+                                    userInfo: nil))
         case .failure(let error):
             return .failure(error)
         }

@@ -1,5 +1,5 @@
 import XCTest
-@testable import Stargazers
+@testable import Pokedex
 
 class MURLCommandTests: XCTestCase {
     override func setUp() {}
@@ -8,7 +8,7 @@ class MURLCommandTests: XCTestCase {
         let service = MURLService(session: session,
                                    dispatcher: SyncDispatcher())
         return MURLConfiguration(service: service,
-                                  baseUrl: "https://api.github.com")
+                                  baseUrl: "https://pokeapi.co/api/v2")
     }
 }
 

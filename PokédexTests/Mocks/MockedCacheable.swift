@@ -1,5 +1,5 @@
 import Foundation
-@testable import Stargazers
+@testable import Pokedex
 
 class MockedCacheable: MCacheable {
     var counterSet: Int = 0

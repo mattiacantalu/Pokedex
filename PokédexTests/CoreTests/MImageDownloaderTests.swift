@@ -1,5 +1,5 @@
 import XCTest
-@testable import Stargazers
+@testable import Pokedex
 
 class MImageDownloaderTests: XCTestCase {
     private var sut: MImageDownloader?
@@ -9,7 +9,7 @@ class MImageDownloaderTests: XCTestCase {
     override func setUp() {
         cache = MockedCacheable()
         do {
-            mockedImage = UIImage(named: "sample", in: Bundle(for: MImageDownloaderTests.self), with: .none)
+            mockedImage = UIImage(named: "pokeball", in: Bundle(for: MImageDownloaderTests.self), with: .none)
             let url = URL(string: "https://sampleurl.com")!
             let response = HTTPURLResponse(url: url,
                                            statusCode: 200,

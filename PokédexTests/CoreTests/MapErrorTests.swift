@@ -1,5 +1,5 @@
 import XCTest
-@testable import Stargazers
+@testable import Pokedex
 
 class MapErrorTests: XCTestCase {
     func testMapError() {
@@ -8,7 +8,7 @@ class MapErrorTests: XCTestCase {
             return
         }
 
-        let url = URL(string: "https://api.github.com")!
+        let url = URL(string: "https://pokeapi.co/api/v2/poke")!
         let response = HTTPURLResponse(url: url,
                                        statusCode: 401,
                                        httpVersion: "1.0",
@@ -19,16 +19,15 @@ class MapErrorTests: XCTestCase {
         let service = MURLService(session: session,
                                    dispatcher: SyncDispatcher())
         let config =  MURLConfiguration(service: service,
-                                        baseUrl: "https://api.github.com")
+                                        baseUrl: "https://pokeapi.co/api/v2")
         
         do {
-            try MServicePerformer(configuration: config)
-                .stargazers(for: MUser(name: "", repo: ""), page: 0) { result in
+            try MServicePerformer(configuration: config).pokedex() { result in
                     switch result {
                     case .success:
                         XCTFail("Should be fail! Got success.")
                     case .failure(let error):
-                        XCTAssertEqual(error.localizedDescription, "Not Found")
+                        XCTAssertEqual(error.localizedDescription, "The operation couldn’t be completed. ( error 401.)")
                     }
                 }
         } catch { XCTFail("Unexpected error \(error)!") }

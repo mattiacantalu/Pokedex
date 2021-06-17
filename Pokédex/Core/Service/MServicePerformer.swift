@@ -1,9 +1,13 @@
 import Foundation
 
 protocol MServicePerformerProtocol {
-    func stargazers(for user: MUser,
-                    page: Int,
-                    completion: @escaping ((Result<[MStargazer], Error>) -> Void)) throws
+    func pokedex(offset: Int,
+                 limit: Int,
+                 completion: @escaping ((Result<Pokedex, Error>) -> Void)) throws
+    func pokedex(next: String,
+                 completion: @escaping ((Result<Pokedex, Error>) -> Void)) throws
+    func pokemon(by link: String,
+                  completion: @escaping ((Result<Pokemon, Error>) -> Void)) throws
 }
 
 struct MServicePerformer {

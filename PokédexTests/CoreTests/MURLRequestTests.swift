@@ -1,20 +1,19 @@
 import XCTest
-@testable import Stargazers
+@testable import Pokedex
 
 class MURLRequestTests: XCTestCase {
     func testCreateRequest() {
-        guard let url = URL(string: "https://api.github.com") else {
+        guard let url = URL(string: "https://pokeapi.co/api/v2") else {
             XCTFail("URL error!")
             return
         }
 
         let request = MURLRequest
             .get(url: url)
-            .with(component: "repos")
-            .with(component: "user1")
-            .appendQuery(name: "page", value: "1")
-            .appendQuery(name: "per_page", value: "5")
-        XCTAssertEqual(request.url.absoluteString, "https://api.github.com/repos/user1?page=1&per_page=5")
+            .with(component: "pokemon")
+            .appendQuery(name: "offset", value: "20")
+            .appendQuery(name: "limit", value: "10")
+        XCTAssertEqual(request.url.absoluteString, "https://pokeapi.co/api/v2/pokemon?offset=20&limit=10")
         XCTAssertEqual(request.method.rawValue, "GET")
     }
 }

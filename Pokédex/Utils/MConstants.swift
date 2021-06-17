@@ -1,15 +1,16 @@
 struct MConstants {
     struct URL {
         struct Component {
-            static let repos = "repos"
-            static let stargazers = "stargazers"
+            static let pokemon = "pokemon"
         }
+
         struct Query {
-            static let page = "page"
-            static let perPage = "per_page"
+            static let limit = "limit"
+            static let offset = "offset"
         }
+        
         static let urlProtocol = "https"
-        static let base = "https://api.github.com"
+        static let base = "https://pokeapi.co/api/v2/"
         static let statusCodeOk = 200
         static let statusCodemultipleChoice = 300
     }

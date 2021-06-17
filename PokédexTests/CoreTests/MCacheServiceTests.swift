@@ -1,5 +1,5 @@
 import XCTest
-@testable import Stargazers
+@testable import Pokedex
 
 class MCacheServiceTests: XCTestCase {
     func testSetObjectForKey_triggeringExpiration_shoudlReturnNil() {

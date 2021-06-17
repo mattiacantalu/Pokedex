@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CCFB5975267A834F005E459D"
-               BuildableName = "Poke&#x301;dex.app"
-               BlueprintName = "Poke&#x301;dex"
-               ReferencedContainer = "container:Poke&#x301;dex.xcodeproj">
+               BuildableName = "Pokedex.app"
+               BlueprintName = "Pokedex"
+               ReferencedContainer = "container:Pokedex.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CCFB598B267A8359005E459D"
-               BuildableName = "Poke&#x301;dexTests.xctest"
-               BlueprintName = "Poke&#x301;dexTests"
-               ReferencedContainer = "container:Poke&#x301;dex.xcodeproj">
+               BuildableName = "PokedexTests.xctest"
+               BlueprintName = "PokedexTests"
+               ReferencedContainer = "container:Pokedex.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CCFB5975267A834F005E459D"
-            BuildableName = "Poke&#x301;dex.app"
-            BlueprintName = "Poke&#x301;dex"
-            ReferencedContainer = "container:Poke&#x301;dex.xcodeproj">
+            BuildableName = "Pokedex.app"
+            BlueprintName = "Pokedex"
+            ReferencedContainer = "container:Pokedex.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CCFB5975267A834F005E459D"
-            BuildableName = "Poke&#x301;dex.app"
-            BlueprintName = "Poke&#x301;dex"
-            ReferencedContainer = "container:Poke&#x301;dex.xcodeproj">
+            BuildableName = "Pokedex.app"
+            BlueprintName = "Pokedex"
+            ReferencedContainer = "container:Pokedex.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
