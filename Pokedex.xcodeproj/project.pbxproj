@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC031FCF267FA4700082AFDB /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC031FCE267FA4700082AFDB /* UIViewController+Alert.swift */; };
+		CC031FD1267FA8060082AFDB /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC031FD0267FA8060082AFDB /* AppCoordinator.swift */; };
 		CC196B6A267BEC10006F2181 /* MCacheServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFB59D8267A9FD3005E459D /* MCacheServiceTests.swift */; };
 		CC196B6C267BEC18006F2181 /* MURLCommandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFB59D6267A9FD3005E459D /* MURLCommandTests.swift */; };
 		CC196B6E267BEC20006F2181 /* MURLRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFB59DA267A9FD3005E459D /* MURLRequestTests.swift */; };
@@ -15,9 +17,11 @@
 		CC196B71267BEC95006F2181 /* MImageDownloaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFB59D7267A9FD3005E459D /* MImageDownloaderTests.swift */; };
 		CC196B73267BEDD9006F2181 /* GetNextPokedexCommandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC196B72267BEDD9006F2181 /* GetNextPokedexCommandTests.swift */; };
 		CC196B76267BEF6E006F2181 /* GetPokemonCommandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC196B75267BEF6E006F2181 /* GetPokemonCommandTests.swift */; };
+		CC196B7A267BFDA3006F2181 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC196B78267BFD9E006F2181 /* ListViewModel.swift */; };
+		CC196B7F267BFDC9006F2181 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC196B7B267BFDB4006F2181 /* ListController.swift */; };
+		CC196B84267BFF62006F2181 /* ListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC196B82267BFF5F006F2181 /* ListCellViewModel.swift */; };
+		CC196B86267C00A9006F2181 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC196B85267C00A9006F2181 /* ListCell.swift */; };
 		CCFB597A267A834F005E459D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFB5979267A834F005E459D /* AppDelegate.swift */; };
-		CCFB597C267A834F005E459D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFB597B267A834F005E459D /* SceneDelegate.swift */; };
-		CCFB597E267A834F005E459D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFB597D267A834F005E459D /* ContentView.swift */; };
 		CCFB5980267A8358005E459D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCFB597F267A8358005E459D /* Assets.xcassets */; };
 		CCFB5983267A8358005E459D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCFB5982267A8358005E459D /* Preview Assets.xcassets */; };
 		CCFB5986267A8358005E459D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCFB5984267A8358005E459D /* LaunchScreen.storyboard */; };
@@ -57,12 +61,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC031FCE267FA4700082AFDB /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		CC031FD0267FA8060082AFDB /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		CC196B72267BEDD9006F2181 /* GetNextPokedexCommandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNextPokedexCommandTests.swift; sourceTree = "<group>"; };
 		CC196B75267BEF6E006F2181 /* GetPokemonCommandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPokemonCommandTests.swift; sourceTree = "<group>"; };
+		CC196B78267BFD9E006F2181 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		CC196B7B267BFDB4006F2181 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
+		CC196B82267BFF5F006F2181 /* ListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellViewModel.swift; sourceTree = "<group>"; };
+		CC196B85267C00A9006F2181 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		CCFB5976267A834F005E459D /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCFB5979267A834F005E459D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CCFB597B267A834F005E459D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CCFB597D267A834F005E459D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CCFB597F267A8358005E459D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCFB5982267A8358005E459D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CCFB5985267A8358005E459D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -128,6 +136,25 @@
 			path = Commands;
 			sourceTree = "<group>";
 		};
+		CC196B77267BF8A4006F2181 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				CC196B81267BFF50006F2181 /* Cell */,
+				CC196B78267BFD9E006F2181 /* ListViewModel.swift */,
+				CC196B7B267BFDB4006F2181 /* ListController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		CC196B81267BFF50006F2181 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CC196B82267BFF5F006F2181 /* ListCellViewModel.swift */,
+				CC196B85267C00A9006F2181 /* ListCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		CCFB596D267A834F005E459D = {
 			isa = PBXGroup;
 			children = (
@@ -149,11 +176,12 @@
 		CCFB5978267A834F005E459D /* Pokédex */ = {
 			isa = PBXGroup;
 			children = (
-				CCFB59A9267A83AF005E459D /* Core */,
 				CCFB59C5267A84E5005E459D /* Utils */,
+				CCFB59A9267A83AF005E459D /* Core */,
+				CCFB59C8267A84E5005E459D /* MConstants.swift */,
 				CCFB5979267A834F005E459D /* AppDelegate.swift */,
-				CCFB597B267A834F005E459D /* SceneDelegate.swift */,
-				CCFB597D267A834F005E459D /* ContentView.swift */,
+				CC031FD0267FA8060082AFDB /* AppCoordinator.swift */,
+				CC196B77267BF8A4006F2181 /* List */,
 				CCFB597F267A8358005E459D /* Assets.xcassets */,
 				CCFB5984267A8358005E459D /* LaunchScreen.storyboard */,
 				CCFB5987267A8358005E459D /* Info.plist */,
@@ -243,9 +271,9 @@
 			children = (
 				CCFB59C6267A84E5005E459D /* Functional.swift */,
 				CCFB59C7267A84E5005E459D /* Dispatcher.swift */,
-				CCFB59C8267A84E5005E459D /* MConstants.swift */,
 				CCFB59C9267A84E5005E459D /* PerformTry.swift */,
 				CCFB59CB267A84E5005E459D /* MExtensions.swift */,
+				CC031FCE267FA4700082AFDB /* UIViewController+Alert.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -387,19 +415,23 @@
 				CCFB59CD267A84E5005E459D /* Dispatcher.swift in Sources */,
 				CCFB59BD267A83AF005E459D /* MCacheService.swift in Sources */,
 				CCFB59BF267A83AF005E459D /* Result+MapError.swift in Sources */,
+				CC196B7A267BFDA3006F2181 /* ListViewModel.swift in Sources */,
 				CCFB59C4267A83AF005E459D /* MURLSession.swift in Sources */,
-				CCFB597C267A834F005E459D /* SceneDelegate.swift in Sources */,
 				CCFB59BA267A83AF005E459D /* Pokedex.swift in Sources */,
 				CCFB59D1267A84E5005E459D /* MExtensions.swift in Sources */,
 				CCFB59BB267A83AF005E459D /* MURLRequest.swift in Sources */,
 				CCFB59D3267A96BD005E459D /* PokeCommands.swift in Sources */,
+				CC031FD1267FA8060082AFDB /* AppCoordinator.swift in Sources */,
+				CC031FCF267FA4700082AFDB /* UIViewController+Alert.swift in Sources */,
+				CC196B7F267BFDC9006F2181 /* ListController.swift in Sources */,
 				CCFB59C0267A83AF005E459D /* MURLServiceError.swift in Sources */,
 				CCFB59C3267A83AF005E459D /* MURLConfiguration.swift in Sources */,
 				CCFB59BE267A83AF005E459D /* MURLService.swift in Sources */,
+				CC196B86267C00A9006F2181 /* ListCell.swift in Sources */,
 				CCFB59C1267A83AF005E459D /* MServicePerformer.swift in Sources */,
 				CCFB59CC267A84E5005E459D /* Functional.swift in Sources */,
-				CCFB597E267A834F005E459D /* ContentView.swift in Sources */,
 				CCFB59CF267A84E5005E459D /* PerformTry.swift in Sources */,
+				CC196B84267BFF62006F2181 /* ListCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

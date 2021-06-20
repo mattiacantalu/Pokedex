@@ -1,8 +1,8 @@
 import Foundation
 
 extension MServicePerformerProtocol {
-    func pokedex(offset: Int = 20,
-                 limit: Int = 10,
+    func pokedex(offset: Int = 0,
+                 limit: Int = 20,
                  completion: @escaping ((Result<Pokedex, Error>) -> Void)) throws {
         return try pokedex(offset: offset, limit: limit, completion: completion)
     }

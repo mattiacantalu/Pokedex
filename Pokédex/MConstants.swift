@@ -11,6 +11,7 @@ struct MConstants {
         
         static let urlProtocol = "https"
         static let base = "https://pokeapi.co/api/v2/"
+        static let sprites = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"
         static let statusCodeOk = 200
         static let statusCodemultipleChoice = 300
     }
