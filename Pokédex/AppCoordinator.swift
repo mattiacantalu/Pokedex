@@ -37,7 +37,14 @@ class AppCoordinator: CoordinatorProtocol {
     }
 
     func detailController(options: Poke) -> UIViewController {
-        return UIViewController()
+        let imageDownloader = MImageDownloader(service: configuration.service,
+                                               cache: MCacheService())
+        let service = MServicePerformer(configuration: configuration)
+        let viewModel = DetailViewModel(service: service,
+                                        imageDownloader: imageDownloader,
+                                        poke: options)
+        let controller = DetailViewController(viewModel: viewModel)
+        return controller
     }
 
     func asRoot(controller: UIViewController) {

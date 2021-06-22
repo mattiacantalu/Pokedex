@@ -4,7 +4,7 @@ struct Pokedex: Codable {
     let next: String
     let results: [Poke]
 }
-    
+
 struct Pokemon: Codable {
     let name: String
     let experience: Int
