@@ -11,7 +11,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let coordinator = AppCoordinator(window: window,
                     configuration: PokedexSession.configuration)
-        coordinator.asRoot(controller: coordinator.listRootController())
+        coordinator.asRoot(controller: coordinator.listController())
         
         return true
     }

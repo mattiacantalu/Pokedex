@@ -6,7 +6,7 @@ class ListViewModel {
     private let coordinator: CoordinatorProtocol
     private var pokedex: Pokedex?
 
-    private var viewModel: [ListCellViewModel] = []
+    private(set) var viewModel: [ListCellViewModel] = []
 
     init(service: MServicePerformerProtocol,
          imageDownloader: MImageProtocol,

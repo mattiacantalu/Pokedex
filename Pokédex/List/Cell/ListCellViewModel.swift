@@ -29,10 +29,14 @@ class ListCellViewModel {
             .filter { !$0.isEmpty }
             .last
             .nilIfEmpty
-            .flatMap {
-                service.downloadImage(from: "\(MConstants.URL.sprites)\($0).png") { data in
-                    completion(data)
-                }
-            }
+            .fold(some: { [weak self] in
+                self?.download(from: "\(MConstants.URL.sprites)\($0).png",
+                               completion: completion)
+            }, none: { completion(nil) })
+    }
+
+    private func download(from url: String,
+                          completion: @escaping (Data?) -> Void) {
+        service.downloadImage(from: url) { completion($0) }
     }
 }

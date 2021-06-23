@@ -9,6 +9,22 @@
 /* Begin PBXBuildFile section */
 		CC031FCF267FA4700082AFDB /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC031FCE267FA4700082AFDB /* UIViewController+Alert.swift */; };
 		CC031FD1267FA8060082AFDB /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC031FD0267FA8060082AFDB /* AppCoordinator.swift */; };
+		CC0FC7302683D7850088B10D /* ListCellViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0FC72E26838C840088B10D /* ListCellViewModelTest.swift */; };
+		CC0FC7332683D87A0088B10D /* MockedMImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0FC7312683D8770088B10D /* MockedMImageDownloader.swift */; };
+		CC0FC7352683E1980088B10D /* ListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0FC7342683E1980088B10D /* ListViewModelTests.swift */; };
+		CC0FC7372683E3470088B10D /* MockedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0FC7362683E3470088B10D /* MockedCoordinator.swift */; };
+		CC0FCAA02683EA570088B10D /* MockedMServicePerformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0FCA9F2683EA570088B10D /* MockedMServicePerformer.swift */; };
+		CC0FCAA22683EFD70088B10D /* MockedError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0FCAA12683EFD70088B10D /* MockedError.swift */; };
+		CC0FCAA52683F7CE0088B10D /* StringNilIfEmptyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0FCAA42683F7CE0088B10D /* StringNilIfEmptyTests.swift */; };
+		CC0FCAA72683F8710088B10D /* StringNotNilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0FCAA62683F8710088B10D /* StringNotNilTests.swift */; };
+		CC0FCAA92683F9430088B10D /* FoldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0FCAA82683F9430088B10D /* FoldTests.swift */; };
+		CC0FCAAC2683FB420088B10D /* StatViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0FCAAB2683FB420088B10D /* StatViewModelTests.swift */; };
+		CC0FCAAE2683FC3B0088B10D /* TypeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0FCAAD2683FC3B0088B10D /* TypeViewModelTests.swift */; };
+		CC0FCAB02683FCE80088B10D /* MoveViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0FCAAF2683FCE80088B10D /* MoveViewModelTests.swift */; };
+		CC0FCAB22683FD810088B10D /* AbilityViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0FCAB12683FD810088B10D /* AbilityViewModelTests.swift */; };
+		CC0FD8522684B0000088B10D /* SpriteViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0FD8512684B0000088B10D /* SpriteViewModelTests.swift */; };
+		CC0FD8542684B2A20088B10D /* DetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0FD8532684B2A20088B10D /* DetailViewModelTests.swift */; };
+		CC0FE3322684D4170088B10D /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0FE3312684D4170088B10D /* CoordinatorTests.swift */; };
 		CC196B6A267BEC10006F2181 /* MCacheServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFB59D8267A9FD3005E459D /* MCacheServiceTests.swift */; };
 		CC196B6C267BEC18006F2181 /* MURLCommandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFB59D6267A9FD3005E459D /* MURLCommandTests.swift */; };
 		CC196B6E267BEC20006F2181 /* MURLRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFB59DA267A9FD3005E459D /* MURLRequestTests.swift */; };
@@ -71,6 +87,22 @@
 /* Begin PBXFileReference section */
 		CC031FCE267FA4700082AFDB /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		CC031FD0267FA8060082AFDB /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		CC0FC72E26838C840088B10D /* ListCellViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellViewModelTest.swift; sourceTree = "<group>"; };
+		CC0FC7312683D8770088B10D /* MockedMImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedMImageDownloader.swift; sourceTree = "<group>"; };
+		CC0FC7342683E1980088B10D /* ListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModelTests.swift; sourceTree = "<group>"; };
+		CC0FC7362683E3470088B10D /* MockedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedCoordinator.swift; sourceTree = "<group>"; };
+		CC0FCA9F2683EA570088B10D /* MockedMServicePerformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedMServicePerformer.swift; sourceTree = "<group>"; };
+		CC0FCAA12683EFD70088B10D /* MockedError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedError.swift; sourceTree = "<group>"; };
+		CC0FCAA42683F7CE0088B10D /* StringNilIfEmptyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringNilIfEmptyTests.swift; sourceTree = "<group>"; };
+		CC0FCAA62683F8710088B10D /* StringNotNilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringNotNilTests.swift; sourceTree = "<group>"; };
+		CC0FCAA82683F9430088B10D /* FoldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldTests.swift; sourceTree = "<group>"; };
+		CC0FCAAB2683FB420088B10D /* StatViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatViewModelTests.swift; sourceTree = "<group>"; };
+		CC0FCAAD2683FC3B0088B10D /* TypeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeViewModelTests.swift; sourceTree = "<group>"; };
+		CC0FCAAF2683FCE80088B10D /* MoveViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveViewModelTests.swift; sourceTree = "<group>"; };
+		CC0FCAB12683FD810088B10D /* AbilityViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityViewModelTests.swift; sourceTree = "<group>"; };
+		CC0FD8512684B0000088B10D /* SpriteViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteViewModelTests.swift; sourceTree = "<group>"; };
+		CC0FD8532684B2A20088B10D /* DetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelTests.swift; sourceTree = "<group>"; };
+		CC0FE3312684D4170088B10D /* CoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTests.swift; sourceTree = "<group>"; };
 		CC196B72267BEDD9006F2181 /* GetNextPokedexCommandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNextPokedexCommandTests.swift; sourceTree = "<group>"; };
 		CC196B75267BEF6E006F2181 /* GetPokemonCommandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPokemonCommandTests.swift; sourceTree = "<group>"; };
 		CC196B78267BFD9E006F2181 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
@@ -142,6 +174,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC0FC72D26838C710088B10D /* List */ = {
+			isa = PBXGroup;
+			children = (
+				CC0FC72E26838C840088B10D /* ListCellViewModelTest.swift */,
+				CC0FC7342683E1980088B10D /* ListViewModelTests.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		CC0FCAA32683F7AD0088B10D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CC0FCAA42683F7CE0088B10D /* StringNilIfEmptyTests.swift */,
+				CC0FCAA62683F8710088B10D /* StringNotNilTests.swift */,
+				CC0FCAA82683F9430088B10D /* FoldTests.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CC0FCAAA2683FB300088B10D /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				CC0FCAAB2683FB420088B10D /* StatViewModelTests.swift */,
+				CC0FCAAD2683FC3B0088B10D /* TypeViewModelTests.swift */,
+				CC0FCAAF2683FCE80088B10D /* MoveViewModelTests.swift */,
+				CC0FCAB12683FD810088B10D /* AbilityViewModelTests.swift */,
+				CC0FD8512684B0000088B10D /* SpriteViewModelTests.swift */,
+				CC0FD8532684B2A20088B10D /* DetailViewModelTests.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		CC0FE3302684D4080088B10D /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				CC0FE3312684D4170088B10D /* CoordinatorTests.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		CC196B74267BEE9C006F2181 /* Commands */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,7 +345,11 @@
 			isa = PBXGroup;
 			children = (
 				CCFB59E1267AA195005E459D /* Mocks */,
+				CC0FCAA32683F7AD0088B10D /* Utils */,
 				CCFB59D4267A9FD3005E459D /* CoreTests */,
+				CC0FC72D26838C710088B10D /* List */,
+				CC0FCAAA2683FB300088B10D /* Detail */,
+				CC0FE3302684D4080088B10D /* Coordinator */,
 				CCFB5992267A8359005E459D /* Info.plist */,
 			);
 			path = "PokédexTests";
@@ -370,6 +446,10 @@
 				CCFB59EC267AA298005E459D /* MockedCacheable.swift */,
 				CCFB59E8267AA283005E459D /* MockedSession.swift */,
 				CCFB59E6267AA265005E459D /* JSONMock.swift */,
+				CC0FC7312683D8770088B10D /* MockedMImageDownloader.swift */,
+				CC0FC7362683E3470088B10D /* MockedCoordinator.swift */,
+				CC0FCA9F2683EA570088B10D /* MockedMServicePerformer.swift */,
+				CC0FCAA12683EFD70088B10D /* MockedError.swift */,
 				CCFB59E3267AA19E005E459D /* valid_get_pokedex.json */,
 				CCFB59E2267AA19E005E459D /* valid_get_pokemon.json */,
 				CCFB59F0267AA732005E459D /* valid_error.json */,
@@ -521,14 +601,30 @@
 			files = (
 				CCFB59E7267AA265005E459D /* JSONMock.swift in Sources */,
 				CC196B71267BEC95006F2181 /* MImageDownloaderTests.swift in Sources */,
+				CC0FC7352683E1980088B10D /* ListViewModelTests.swift in Sources */,
 				CC196B6C267BEC18006F2181 /* MURLCommandTests.swift in Sources */,
 				CC196B6E267BEC20006F2181 /* MURLRequestTests.swift in Sources */,
+				CC0FCAA52683F7CE0088B10D /* StringNilIfEmptyTests.swift in Sources */,
+				CC0FCAA92683F9430088B10D /* FoldTests.swift in Sources */,
+				CC0FC7372683E3470088B10D /* MockedCoordinator.swift in Sources */,
 				CC196B6A267BEC10006F2181 /* MCacheServiceTests.swift in Sources */,
 				CCFB59ED267AA298005E459D /* MockedCacheable.swift in Sources */,
+				CC0FC7332683D87A0088B10D /* MockedMImageDownloader.swift in Sources */,
+				CC0FCAB22683FD810088B10D /* AbilityViewModelTests.swift in Sources */,
+				CC0FCAA72683F8710088B10D /* StringNotNilTests.swift in Sources */,
 				CCFB59EA267AA283005E459D /* MockedSession.swift in Sources */,
+				CC0FE3322684D4170088B10D /* CoordinatorTests.swift in Sources */,
 				CC196B6F267BEC23006F2181 /* GetPokedexCommandTests.swift in Sources */,
+				CC0FCAA22683EFD70088B10D /* MockedError.swift in Sources */,
+				CC0FCAA02683EA570088B10D /* MockedMServicePerformer.swift in Sources */,
 				CC196B76267BEF6E006F2181 /* GetPokemonCommandTests.swift in Sources */,
 				CC196B73267BEDD9006F2181 /* GetNextPokedexCommandTests.swift in Sources */,
+				CC0FD8542684B2A20088B10D /* DetailViewModelTests.swift in Sources */,
+				CC0FCAAE2683FC3B0088B10D /* TypeViewModelTests.swift in Sources */,
+				CC0FC7302683D7850088B10D /* ListCellViewModelTest.swift in Sources */,
+				CC0FD8522684B0000088B10D /* SpriteViewModelTests.swift in Sources */,
+				CC0FCAB02683FCE80088B10D /* MoveViewModelTests.swift in Sources */,
+				CC0FCAAC2683FB420088B10D /* StatViewModelTests.swift in Sources */,
 				CC196B70267BEC64006F2181 /* MapErrorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -606,7 +702,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -661,7 +757,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

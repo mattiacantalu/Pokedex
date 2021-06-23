@@ -2,7 +2,6 @@ import Foundation
 import UIKit
 
 final class ListViewController: UITableViewController {
-
     private let viewModel: ListViewModel
     private var dataSource: [ListCellViewModel] {
         didSet { tableView.reloadData() }

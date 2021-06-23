@@ -16,7 +16,7 @@ extension MURLCommandTests {
 
     func testGetDefaultPokedexRequest() {
         let session = MockedSession(data: Data(), response: nil, error: nil) {
-            XCTAssertEqual($0.url?.absoluteString, "https://pokeapi.co/api/v2/pokemon?offset=20&limit=10")
+            XCTAssertEqual($0.url?.absoluteString, "https://pokeapi.co/api/v2/pokemon?offset=0&limit=20")
             XCTAssertEqual($0.httpMethod, "GET")
         }
 

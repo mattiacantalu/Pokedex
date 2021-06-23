@@ -20,7 +20,7 @@ extension Swift.Optional where Wrapped == String {
     }
 }
 
-private extension String {
+extension String {
     var nilIfEmpty: String? {
         guard !isEmpty else {
             return nil

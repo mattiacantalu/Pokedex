@@ -4,18 +4,22 @@ import XCTest
 class MImageDownloaderTests: XCTestCase {
     private var sut: MImageDownloader?
     private var cache: MockedCacheable?
-    private var mockedImage: UIImage?
+    private var mockedImage: Data? {
+        UIImage(named: "pokeball",
+                in: Bundle(for: MImageDownloaderTests.self),
+                with: .none)?
+            .jpegData(compressionQuality: 1.0)
+    }
 
     override func setUp() {
         cache = MockedCacheable()
         do {
-            mockedImage = UIImage(named: "pokeball", in: Bundle(for: MImageDownloaderTests.self), with: .none)
             let url = URL(string: "https://sampleurl.com")!
             let response = HTTPURLResponse(url: url,
                                            statusCode: 200,
                                            httpVersion: "1.0",
                                            headerFields: ["Content-Type": "image"])
-            let session = MockedSession(data: try XCTUnwrap(mockedImage).jpegData(compressionQuality: 1.0),
+            let session = MockedSession(data: try XCTUnwrap(mockedImage),
                                         response: response,
                                         error: nil,
                                         completionRequest: { _ in })
@@ -28,7 +32,7 @@ class MImageDownloaderTests: XCTestCase {
     func testDownloadImage_withCache_shouldReturnCachedImg() {
         cache?.getHandler = {
             XCTAssertEqual($0, "https://sampleurl.com")
-            return self.mockedImage
+            return self.mockedImage as AnyObject
         }
 
         sut?.downloadImage(from: "https://sampleurl.com",

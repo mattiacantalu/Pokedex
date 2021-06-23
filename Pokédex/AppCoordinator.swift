@@ -1,15 +1,8 @@
-//
-//  AppCoordinator.swift
-//  Pokedex
-//
-//  Created by Mattia Cantalù on 20/06/21.
-//
-
 import Foundation
 import UIKit
 
 protocol CoordinatorProtocol {
-    func listRootController() -> UIViewController
+    func listController() -> UIViewController
     func detailController(options: Poke) -> UIViewController
     func asRoot(controller: UIViewController)
     func push(controller: UIViewController, from sender: Any?)
@@ -25,7 +18,7 @@ class AppCoordinator: CoordinatorProtocol {
         self.configuration = configuration
     }
 
-    func listRootController() -> UIViewController {
+    func listController() -> UIViewController {
         let imageDownloader = MImageDownloader(service: configuration.service,
                                                cache: MCacheService())
         let service = MServicePerformer(configuration: configuration)
