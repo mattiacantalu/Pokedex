@@ -1,5 +1,5 @@
 # Pokédex
-Sample iOS application to understand how http://pokeapi.co/ works.
+Sample iOS application to understand how [PokéAPI](https://pokeapi.co) works.
 
 The project is oriented toward the following patterns: 
 
