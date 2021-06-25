@@ -346,7 +346,7 @@
 			children = (
 				CCFB59E1267AA195005E459D /* Mocks */,
 				CC0FCAA32683F7AD0088B10D /* Utils */,
-				CCFB59D4267A9FD3005E459D /* CoreTests */,
+				CCFB59D4267A9FD3005E459D /* Core */,
 				CC0FC72D26838C710088B10D /* List */,
 				CC0FCAAA2683FB300088B10D /* Detail */,
 				CC0FE3302684D4080088B10D /* Coordinator */,
@@ -426,7 +426,7 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		CCFB59D4267A9FD3005E459D /* CoreTests */ = {
+		CCFB59D4267A9FD3005E459D /* Core */ = {
 			isa = PBXGroup;
 			children = (
 				CC196B74267BEE9C006F2181 /* Commands */,
@@ -436,7 +436,7 @@
 				CCFB59D8267A9FD3005E459D /* MCacheServiceTests.swift */,
 				CCFB59DA267A9FD3005E459D /* MURLRequestTests.swift */,
 			);
-			path = CoreTests;
+			path = Core;
 			sourceTree = "<group>";
 		};
 		CCFB59E1267AA195005E459D /* Mocks */ = {
